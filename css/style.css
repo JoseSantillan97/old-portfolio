@@ -1,0 +1,544 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+::-webkit-scrollbar {
+      width: 12px;
+      border-radius: 10px;
+      box-shadow: -1px 0px 10px rgba(160,120,230,.4);
+}
+::-webkit-scrollbar-track {
+      background-color: rgba(160,120,230,.6);
+      box-shadow: -1px 0px 10px rgba(160,120,230,.4);
+      /*border-radius: 10px;*/
+}
+::-webkit-scrollbar-thumb {
+      background-color: rgba(160,120,230,.8);
+      border-radius: 10px;
+      box-shadow: -1px 0px 10px rgba(160,120,230,.4);
+}
+/*::-webkit-scrollbar-button {
+      background-color: rgba(160,120,230,1);
+      /*border-radius: 10px;*/
+}*/
+::-webkit-scrollbar-corner {
+      background-color: black;
+      border-radius: 10px;
+}
+/*		INICIAN ESTILOS PARA LA BARRA DE NAVEGACION	*/
+	.barraNavegacion {
+		height: 50px;
+		width: 100%;
+		/*background: rgba(90,190,120,.2);*/
+		position: fixed;
+		transition: .5s ease-in-out;
+		z-index: 1000;
+	}
+	.barraNavegacionScroll {
+		height: 70px;
+		background: rgba(90,190,120,.8);
+		position: fixed;
+		width: 100%;
+		transition: .5s ease-in-out;
+		z-index: 1000;
+	}
+	.logo {
+		width: 60px;
+		display: inline-block;
+		margin-left: 3%;
+		transition: .5s ease-in-out;
+	}
+	.logoScroll {
+		width: 70px;
+		display: inline-block;
+		margin-left: 3%;
+	}
+	.loguito {
+		width: 50px;
+		border-radius: 50%;
+		transition: .5s ease-in-out;
+	}
+	.loguitoScroll {
+		width: 70px;
+		transition: .5s ease-in-out;
+		border-radius: 50%;
+	    box-shadow: 0px 1px 32px red;
+	}
+	.lista {
+		display: inline-block;
+		float: right;
+		width: 45%;
+		margin-top: .5%;
+	}
+	.lista ul {
+		display: inline-block;
+		width: 99%;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.lista ul li {
+		display: inline-block;
+		margin-right: 5%;
+		transition: .4s ease-in-out;
+	}
+	.activeList{
+		color: #FFF;
+		font-size: 1.1em;
+	}
+/*		TERMINAN ESTILOS PARA LA BARRA DE NAVEGACION	*/
+/*		INICIAN ESTILOS PARA LA PRIMERA SECCION 	*/
+	.firstSection {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/inicio.jpg);
+		background-attachment: fixed;
+		/*background: rgba(20,160,140,.9);*/
+		margin-top: 0%;
+	}
+	.img {
+		display: block;
+		text-align: center;
+		margin-top: 7%;
+	}
+	.img img {
+		border-radius: 50%;
+		width: 25%;
+		box-shadow:0 0 120px rgb(160,120,230);
+		background: rgba(160,120,230,.8); 
+		/*border: 1px solid red;*/
+	}
+	.name {
+		display: block;
+		text-align: center;
+	}
+	.myName {
+		display: inline-block;
+		text-align: center;
+		font-size: 3em;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: 'Sedgwick Ave';
+		color: white;
+		mix-blend-mode: difference;
+		z-index: 1;
+	}
+	.myName span {
+		font-size: 1.7em;
+		letter-spacing: 4px;
+		filter: drop-shadow(0.05em 0.05em red);
+	}
+	.myName.background - light { 
+	  color: negro; 
+	} 
+
+	.myName.background - dark { 
+	  color: blanco; 
+	}
+/*		TERMINAN ESTILOS PARA LA PRIMERA SECCION 	*/
+/*		INICIAN ESTILOS PARA ESTUDIOS 		*/
+	.estudios {
+		width: 100%;
+		height: 100%;
+		background: rgba(150,140,210,.9);
+	}
+	.tituloEstudios {
+		width: 100%;
+		text-align: center;
+		font-size: 3.4em;
+		text-transform: uppercase;
+		margin: 0 0 0 0;
+		padding-top: 2%;
+		font-weight: bold;
+		font-family: 'Kaushan Script';
+	}
+	.estudiosBach {
+		font-size: 
+	}
+	.contentEstudios {
+		width: 90%;
+		margin: 7% 	auto;
+	}
+	.estudiosBach {
+		width: 100%;
+		margin-bottom: 9%;
+		font-size: 1.8em;
+		font-family: sans-serif;
+	}
+	.estudiosBach p {
+
+	}
+	.estudiosBach span {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: rgba(10,100,125,1);
+	}
+	.estudiosUni {
+		width: 100%;
+		font-size: 1.8em;
+		font-family: sans-serif;
+	}
+	.estudiosUni span {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: rgba(10,100,125,1);
+	}
+/*		TERMINAN ESTILOS PARA ESTUDIOS 		*/
+/*		INICIAN ESTILOS PARA SOBRE MI 		*/
+	.aboutMe {
+		width: 100%;
+		height: 100%;
+		background: rgba(10,80,30,.8);
+	}
+	.tituloAboutMe {
+		width: 100%;
+		text-align: center;
+		font-size: 3.4em;
+		text-transform: uppercase;
+		margin: 0 0 0 0;
+		padding-top: 2%;
+		font-weight: bold;
+		font-family: "Kaushan Script";	
+	}
+	.contentSkills {
+		width: 90%;
+		margin: 2% auto;
+	}
+	.habilidades {
+		width: 66%;
+		margin: auto;
+	}
+	.habilidades .secSkills{
+		font-size: 2em;
+		font-weight: bold;
+		color: rgba(158,41,242,.7);
+		text-transform: uppercase;
+		font-family: 'Shadows Into Light';
+		margin-bottom: 0%;
+		margin-left: -7%;
+	}
+	.skill1,.skill2,.skill3,.skill4,.skill5 {
+		font-family: Dancing Script;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	.Barr1 {
+		width: 80%;
+		height: 15px;
+		background: rgba(0,0,0,0.6);
+		border-radius: 7px;
+	}
+	.progreso1 {
+		width: 95%;
+		height: 100%;
+		background: rgba(10,70,120,.9);
+		border-radius: 7px;
+	}
+	.imagenProg1 {
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/bar.png);
+	}
+	.Barr2 {
+		width: 80%;
+		height: 15px;
+		background: rgba(0,0,0,0.6);
+		border-radius: 7px;
+	}
+	.progreso2 {
+		width: 85%;
+		height: 100%;
+		background: rgba(10,70,120,.9);
+		border-radius: 7px;
+	}
+	.imagenProg2 {
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/bar.png);
+	}
+	.Barr3 {
+		width: 80%;
+		height: 15px;
+		background: rgba(0,0,0,0.6);
+		border-radius: 7px;
+	}
+	.progreso3 {
+		width: 55%;
+		height: 100%;
+		background: rgba(10,70,120,.9);
+		border-radius: 7px;
+	}
+	.imagenProg3 {
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/bar.png);
+	}
+	.Barr4 {
+		width: 80%;
+		height: 15px;
+		background: rgba(0,0,0,0.6);
+		border-radius: 7px;
+	}
+	.progreso4 {
+		width: 98%;
+		height: 100%;
+		background: rgba(10,70,120,.9);
+		border-radius: 7px;
+	}
+	.imagenProg4 {
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/bar.png);
+	}
+	.Barr5 {
+		width: 80%;
+		height: 15px;
+		background: rgba(0,0,0,0.6);
+		border-radius: 7px;
+	}
+	.progreso5 {
+		width: 55%;
+		height: 100%;
+		background: rgba(10,70,120,.9);
+		border-radius: 7px;
+	}
+	.imagenProg5 {
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/bar.png);
+	}
+	.valores {
+		font-size: 2em;
+		margin: 2% 0 0 13%;
+		font-weight: bold;
+		color: rgba(158,41,242,.7);
+		text-transform: uppercase;
+		font-family: Shadows Into Light;
+		margin-bottom: 3%;
+	}
+	.contenedorValores {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+	.contenedorValores p {
+		display: inline-block;
+		margin: 0 2% 0 2%;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.2em;
+		background: rgba(40, 170, 199, .9);
+		animation: glow 3s infinite;
+		font-family: Dancing Script;
+		border-radius: 5px;
+	}
+	@keyframes glow {
+		1% {
+	    text-shadow: 12px 12px 10px rgba(15, 5, 155, .5),
+	                 -12px -12px 10px rgba(15, 5, 155, .5);
+	  }
+	  50% {
+	    text-shadow:  0 0 10px rgba(15, 5, 155, .5);
+	  }
+	  
+	  90% {
+	    text-shadow: 2px 2px 5px rgba(15, 5, 155, 1),
+	                 -2px -2px 5px rgba(15, 5, 155, 1);
+	  }
+	  70% {
+	    text-shadow: 2px 2px 4px rgba(15, 5, 155, .7),
+	                 -2px -2px 4px rgba(15, 5, 155, .7);
+	  }
+	  
+	}
+/*		TERMINAN ESTILOS PARA SOBRE MI 		*/
+/*		INICIAN ESTILOS PARA SECCION DE PROYECTOS 	*/
+	.proyectos {
+		width: 100%;
+		height: 150%;
+		background: rgba(73,31,152,.7);
+		background: rgba(71,99,152,.9);
+	}
+	.tituloProyectos {
+		font-size: 3em;
+		width: 100%;
+		display: block;
+		margin: auto;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: Kaushan Script;
+		padding-top: 0%;
+		padding-bottom: 1%;
+	}
+	.liProyectos {
+		width: 85%;
+		margin: auto;
+	}
+	.proyecto1 {
+		border: 2px solid rgba(242,41,208,.7);
+		padding: 2% 0 1% 2%;
+	}
+	.proyecto1 p {
+		font-size: 1.2em;
+		/*text-transform: uppercase;*/
+	}
+	.imgProj1 {
+		background-image: url(../img/slider1.jpg);
+		background-position: right;
+		height: 142px;
+		width: 88%;
+		background-position-x: 56%;
+		background-position-y: 39%;
+		transition: .68s all;
+		text-align: center;
+		margin:auto;
+		zoom: 59%;
+	}
+	.imgProj1:hover {
+		padding: 0 0 0 -15%;
+		width: 98%;
+		height: 500px;
+		background-position: center;
+		zoom: 61%;
+	}
+	.proyecto2 {
+		border: 2px solid rgba(242,41,208,.7);
+		padding: 2% 0 1% 2%;
+	}
+	.proyecto2 p {
+		font-size: 1.2em;
+		/*text-transform: uppercase;*/
+	}
+	.imgProj2 {
+		background-image: url(../img/proyecto2.jpg);
+		background-position: right;
+		height: 142px;
+		width: 88%;
+		background-position-x: 45%;
+		background-position-y: 72%;
+		transition: .68s all;
+		text-align: center;
+		margin:auto;
+		zoom: 59%;
+	}
+	.imgProj2:hover {
+		padding: 0 0 0 -15%;
+		width: 98%;
+		height: 500px;
+		background-position: center;
+		zoom: 66%;
+	}
+	.proyecto3 {
+		border: 2px solid rgba(242,41,208,.7);
+		padding: 2% 0 1% 2%;
+	}
+	.proyecto3 p {
+		font-size: 1.2em;
+		/*text-transform: uppercase;*/
+	}
+	.imgProj3 {
+		background-image: url(../img/proyecto3.jpg);
+		background-position: right;
+		height: 142px;
+		width: 88%;
+		background-position-x: 57%;
+		background-position-y: 17%;
+		transition: .68s all;
+		text-align: center;
+		margin:auto;
+		zoom: 59%;
+	}
+	.imgProj3:hover {
+		padding: 0 0 0 -15%;
+		width: 98%;
+		height: 500px;
+		background-position: center;
+		background-position-y: 4%;
+		zoom: 66%;
+	}
+	.proyecto4 {
+		border: 2px solid rgba(242,41,208,.7);
+		padding: 2% 0 1% 2%;
+	}
+	.proyecto4 p {
+		font-size: 1.2em;
+		/*text-transform: uppercase;*/
+	}
+	.imgProj4 {
+		background-image: url(../img/proyecto4.jpg);
+		background-position: unset;
+		height: 142px;
+		width: 88%;
+		/*background-position-x: 57%;*/
+		/*background-position-y: 17%;*/
+		transition: .68s all;
+		text-align: center;
+		margin:auto;
+		zoom: 63%;
+	}
+	.imgProj4:hover {
+		padding: 0 0 0 -15%;
+		width: 98%;
+		height: 500px;
+		background-position: center;
+		background-position-y: 0%;
+		zoom: 65%;
+	}
+/*		TERMINAN ESTILOS PARA SECCION DE PROYECTOS 	*/
+/*		INICIAN ESTILOS PARA SECCION DE CONTACTO 	*/
+	.contacto {
+		width: 100%;
+		height: 100%;
+		background: rgba(234,234,97,.9);
+	}
+	.titleContact {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 4em;
+		padding-top: 4%;
+		font-family: Kaushan Script;
+	}
+	.contentContact {
+		width: 80%;
+		margin: auto;
+		padding-top: 2%;
+	}
+	.email {
+		width: 100%;
+		font-size: 3.2em;
+		margin: auto;
+		text-align: center;
+		padding-top: 0%;
+		font-family: Rancho;
+	}
+	.email span {
+		font-size: .7em;
+		color:red;
+	}
+	.preferentemente {
+		width: 100%;
+		text-align: center;
+		font-size: 3.2em;
+		padding-top: 1%;
+		font-family: "Yellowtail";
+	}
+	.whatsapp {
+		width: 100%;
+		text-align: center;
+		padding-top: 4%;
+		font-size: 2.8em;
+		font-family: Permanent Marker;
+	}
+	.whatsapp span {
+		font-size: .7em;
+		color:red;
+	}
+/*		TERMINAN ESTILOS PARA SECCION DE CONTACTO 	*/
